@@ -21,6 +21,9 @@ topologies, kept lightweight enough to cascade three stages in series inside an 
 ### Baxandall Equalizer
 A 2-band Baxandall mastering-grade EQ is included, which can be routed to four selectable positions in the saturation circuit. Placing the EQ before each saturation model results in unique breakup textures. For example, it can be used as a pre-emphasis EQ before the Vintage Tape model. The EQ is completely free of Nyquist cramping.
 
+### Parallel Blend & 2X Drive
+The plugin features a phase-exact Mix control for dialing in more aggressive settings to use in parallel, as well as a 2X Drive mode.
+
 ## Screenshots  
 
 <img width="911" height="540" alt="Maple" src="https://github.com/user-attachments/assets/f8dd6b17-c881-4d55-bed2-87f9374e5ca1" />
