@@ -24,7 +24,6 @@ A 2-band Baxandall mastering-grade EQ is included, which can be routed to four s
 ## Screenshots  
 
 <img width="911" height="540" alt="Maple" src="https://github.com/user-attachments/assets/f8dd6b17-c881-4d55-bed2-87f9374e5ca1" />
-<img width="942" height="600" alt="Screenshot 2026-11-23 081306" src="https://github.com/user-attachments/assets/907c490e-2084-436f-84fe-147834389a31" />
 
 ## Installation
 Currently, Maple is released for Windows 10/11 only, but Mac and Linux releases are coming soon. To grab the latest prebuilt release, head to the [releases page.](https://github.com/akbrucke/Maple/releases)
