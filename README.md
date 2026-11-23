@@ -13,7 +13,7 @@ ensuring zero phase shift or comb filtering at any parallel mix setting.
 
 ## Features
 
-### Four Selectable Saturation Models
+### Saturation Models
 Maple features four selectable saturation models, one per stage: Tube, 73 Class-A, Vintage Tape, and FET.  
 They aren't generic ```std::tanh(x)``` waveshapers - each mode combines custom asymmetric transfer functions with frequency-dependent filtering and state memory tailored to the physical behavior of the four analog  
 topologies, kept lightweight enough to cascade three stages in series inside an 8x linear-phase FIR oversampling loop.
