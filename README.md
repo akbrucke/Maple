@@ -29,7 +29,7 @@ The plugin features a phase-exact Mix control for dialing in more aggressive set
 <img width="911" height="540" alt="Maple" src="https://github.com/user-attachments/assets/f8dd6b17-c881-4d55-bed2-87f9374e5ca1" />
 
 ## Installation
-Currently, Maple is released for Windows 10/11 only, but Mac and Linux releases are coming soon. To grab the latest prebuilt release, head to the [releases page.](https://github.com/akbrucke/Maple/releases)
+Currently, Maple is released for Windows 10/11 only, but Mac and Linux releases are coming soon. To grab the latest prebuilt release, head to the [releases page.](https://github.com/akbrucke/Maple/releases) Included with the release download is a thorough user manual, a collection of presets, and installation instructions.
 
 ## Building from Source (Windows)
 
