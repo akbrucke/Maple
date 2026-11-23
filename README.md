@@ -18,6 +18,9 @@ Maple features four selectable saturation models, one per stage: Tube, 73 Class-
 They aren't generic ```std::tanh(x)``` waveshapers - each mode combines custom asymmetric transfer functions with frequency-dependent filtering and state memory tailored to the physical behavior of the four analog  
 topologies, kept lightweight enough to cascade three stages in series inside an 8x linear-phase FIR oversampling loop.
 
+### Baxandall Equalizer
+A 2-band Baxandall mastering-grade EQ is included, which can be routed to four selectable positions in the saturation circuit. Placing the EQ before each saturation model results in unique breakup textures. For example, it can be used as a pre-emphasis EQ before the Vintage Tape model. The EQ is completely free of Nyquist cramping.
+
 ## Screenshots  
 
 <img width="911" height="540" alt="Maple" src="https://github.com/user-attachments/assets/f8dd6b17-c881-4d55-bed2-87f9374e5ca1" />
