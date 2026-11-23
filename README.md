@@ -1,6 +1,6 @@
 ![Static Badge](https://img.shields.io/badge/Version-1.10-red)  
 # Maple
-VST3 Harmonic Mastering Console with 3-stage saturation circuit and 2-band Baxandall EQ  
+VST3 Harmonic Mastering Console with 3-stage cascading saturation circuit and re-routable 2-band Baxandall EQ, using JUCE Framework, vibe-coded and then refined with a human touch
 
 ## Overview & Design Philosophy
 Rather than relying on a single static saturation curve, Maple cascades three
@@ -14,11 +14,17 @@ ensuring zero phase shift or comb filtering at any parallel mix setting.
 ## Features
 
 ### Four Selectable Saturation Models
-The plugin features four selectable saturation models, one per stage: Tube, 73 Class-A, Vintage Tape, and FET.  
+Maple features four selectable saturation models, one per stage: Tube, 73 Class-A, Vintage Tape, and FET.  
+They aren't generic ```std::tanh(x)``` waveshapers - each mode combines custom asymmetric transfer functions with frequency-dependent filtering and state memory tailored to the physical behavior of the four analog  
+topologies, kept lightweight enough to cascade three stages in series inside an 8x linear-phase FIR oversampling loop.
 
 ## Screenshots  
 
+<img width="911" height="540" alt="Maple" src="https://github.com/user-attachments/assets/f8dd6b17-c881-4d55-bed2-87f9374e5ca1" />
+<img width="942" height="600" alt="Screenshot 2026-11-23 081306" src="https://github.com/user-attachments/assets/907c490e-2084-436f-84fe-147834389a31" />
 
+## Installation
+Currently, Maple is released for Windows 10/11 only, but Mac and Linux releases are coming soon. To grab the latest prebuilt release, head to the [releases page.](https://github.com/akbrucke/Maple/releases)
 
 ## Building from Source (Windows)
 
