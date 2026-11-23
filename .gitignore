@@ -23,6 +23,9 @@
 *.dll
 *.so.*
 
+# Compiled binaries
+*.vst3
+
 # Fortran module files
 *.mod
 *.smod
@@ -42,6 +45,7 @@
 [Bb]uild/
 [Bb]uild-*/
 cmake-build-*/
+out/
 
 # CMake generated files
 CMakeFiles/
@@ -66,3 +70,6 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# VSCode files
+.vs/
