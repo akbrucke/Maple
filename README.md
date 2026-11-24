@@ -76,7 +76,26 @@ The finished VST3 bundle will be located in `build\Maple_artefacts\Release\VST3\
 Copy `Maple.vst3` into your system VST3 folder so your DAW can detect it.  
 On macOS, this would be: `~/Library/Audio/Plug-Ins/VST3/`  
 
-- *Note that Logic Pro and GarageBand only load Audio Units, so they won't see the VST3*
+- *Note that Logic Pro and GarageBand only load Audio Units, so they won't see the VST3*  
+
+## Building from Source (Linux)  
+
+### Prerequisites  
+* JUCE 8 requires standard C++ build tools along with X11, FreeType, ALSA, and WebKit/GTK development headers to compile VST3 targets on Linux.  
+
+### Build Steps
+
+1. Clone the repository  
+
+2. Open a terminal in the root folder and run  
+`cmake -B build -DCMAKE_BUILD_TYPE=Release`  
+And then compile the release build:  
+`cmake --build build --config Release`  
+
+3. Locate & Install the VST3 Plugin
+The finished VST3 bundle will be located in `build\Follower_artefacts\Release\VST3\Follower.vst3`  
+Copy `Follower.vst3` into your system VST3 folder so your DAW can detect it.  
+On Linux, this would be: `~/.vst3`  
 
 ## Changelog
 MAPLE V1.10 (November 22, 2026)
