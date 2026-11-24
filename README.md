@@ -54,6 +54,45 @@ The finished VST3 bundle will be located in ```build\Maple_artefacts\Release\VST
 Copy ```Maple.vst3``` into your system VST3 folder so your DAW can detect it.  
 On Windows, this would be: ```C:\Program Files\Common Files\VST3\```
 
+## Building from Source (macOS, Apple silicon)
+
+Maple uses CMake and automatically fetches JUCE (`9.0.5`) during configuration. No manual SDK downloads or git submodules are required. Full Xcode is not needed; the Xcode Command Line Tools are enough. These steps build for Apple silicon (arm64) only.
+
+### Prerequisites
+* **Xcode Command Line Tools** (provides the compiler and Git). Install with:
+```bash
+xcode-select --install
+```
+* **Homebrew** ([brew.sh](https://brew.sh))
+* **CMake 3.22 or newer** and **Ninja**:
+```bash
+brew install cmake ninja
+```
+
+### Build Steps
+
+1. Clone the repository and enter the folder
+```bash
+git clone https://github.com/akbrucke/Maple.git
+cd Maple
+```
+
+2. Configure and compile the release build
+```bash
+cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
+cmake --build build
+```
+
+3. Locate & Install the VST3 Plugin  
+The finished VST3 bundle will be located in ```build/Maple_artefacts/Release/VST3/Maple.vst3```  
+A standalone app is also built at ```build/Maple_artefacts/Release/Standalone/Maple.app```  
+Copy ```Maple.vst3``` into your user VST3 folder so your DAW can detect it:
+```bash
+mkdir -p ~/Library/Audio/Plug-Ins/VST3
+cp -R build/Maple_artefacts/Release/VST3/Maple.vst3 ~/Library/Audio/Plug-Ins/VST3/
+```
+Then rescan plugins in your DAW. (Logic Pro and GarageBand only load Audio Units, so they will not see this VST3.)
+
 ## Changelog
 MAPLE V1.10 (November 22, 2026)
 -Updated font rendering in preparation for cross-platform support
