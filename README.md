@@ -93,8 +93,8 @@ And then compile the release build:
 `cmake --build build --config Release`  
 
 3. Locate & Install the VST3 Plugin
-The finished VST3 bundle will be located in `build\Follower_artefacts\Release\VST3\Follower.vst3`  
-Copy `Follower.vst3` into your system VST3 folder so your DAW can detect it.  
+The finished VST3 bundle will be located in `build\Maple_artefacts\Release\VST3\Maple.vst3`  
+Copy `Maple.vst3` into your system VST3 folder so your DAW can detect it.  
 On Linux, this would be: `~/.vst3`  
 
 ## Changelog
