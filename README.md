@@ -1,4 +1,4 @@
-![Static Badge](https://img.shields.io/badge/Version-1.10-red)  
+![GitHub Release](https://img.shields.io/github/v/release/akbrucke/Maple?color=%23E11D48)
 # Maple
 VST3 Harmonic Mastering Console with 3-stage cascading saturation circuit and re-routable 2-band Baxandall EQ, using JUCE Framework, vibe-coded and then refined with a human touch
 
